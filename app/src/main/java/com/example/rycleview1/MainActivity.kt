@@ -1,4 +1,4 @@
-package com.example.rycleview1
+    package com.example.rycleview1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.rycleview1.adapter.TodoAdapter
 import com.example.rycleview1.databinding.ActivityMainBinding
 import com.example.rycleview1.model.Todo
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -13,7 +14,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         var todoList = mutableListOf(
             Todo("Opening", true),
             Todo("Penjelasan", false),

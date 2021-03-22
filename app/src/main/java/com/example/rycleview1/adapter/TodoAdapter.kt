@@ -11,7 +11,8 @@ import kotlinx.android.synthetic.main.item_todo.view.*
 class TodoAdapter (var todos: List<Todo>):RecyclerView.Adapter<TodoAdapter.TodoViewHolder>(){
     inner class TodoViewHolder(itemView: View):RecyclerView.ViewHolder(itemView)
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TodoAdapter.TodoViewHolder {
-        return TodoViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_todo, parent,false))    }
+        return TodoViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_todo, parent,false))
+    }
 
     override fun getItemCount(): Int {
     return todos.size
